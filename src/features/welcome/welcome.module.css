@@ -1,18 +1,18 @@
 .welcome {
   display: grid;
   grid-template-columns: repeat(12, fr);
-  gap: 40px 10px;
-  padding: 20px;
+  gap: 40px 20px;
+  padding: 20px 40px;
 }
 .welcome .profile {
-  grid-column: 2 / span 5;
+  grid-column: 4 / span 3;
 }
 .welcome .profile img {
   max-width: 100%;
   border-radius: 50%;
 }
 .welcome .msg {
-  grid-column: 7 / span 6;
+  grid-column: 9 / span 4;
 }
 .welcome .msg h2 {
   font-size: 24px;

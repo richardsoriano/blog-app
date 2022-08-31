@@ -81,5 +81,3 @@ Credit to [Devmentor.live](https://youtu.be/kuzhS_Aepdc) for a terrific youtube 
 ![Devmentor live](sddefault.jpg)
 
 **by Richard Soriano**
-
-![Happy Programmers understanding callback functions in ReactJS](bruce-mars-FWVMhUa_wbY-unsplash.jpg)

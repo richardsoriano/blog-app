@@ -2,7 +2,6 @@ import Page from "@/ui/page"
 
 import { getFeaturedPosts } from "lib/post-utils"
 
-// import featuredPosts from "@/data/blogs"
 import FeaturedPosts from "@/features/posts/featured-posts"
 
 import Main from "features/main"
