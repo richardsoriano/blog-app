@@ -45,8 +45,8 @@ export default function Content({ post }) {
             <Image
               src={`/images/posts/${post.slug}/${image.properties.src}`}
               alt={image.alt}
-              width={800}
               height={600}
+              width={800}
               layout="responsive"
             />
           </div>

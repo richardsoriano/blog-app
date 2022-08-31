@@ -13,7 +13,7 @@ export default function LandingPage({ posts }) {
     <div>
       <Page
         title="Welcome to my Blog"
-        description="Richard Soriano's blog about Front End Programming in ReactJS Redux NextJS"
+        description="Richard Soriano's blog about Javascript Programming in ReactJS Redux NextJS and using CSS"
       >
         <Main>
           <Welcome />
