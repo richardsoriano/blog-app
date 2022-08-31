@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap");
+:root {
+  --card-shadow-color: rgba(82, 24, 250, 0.5);
+  --nav-link-color: rgba(82, 24, 250, 0.5);
+}
+body {
+  margin: 0;
+  font-family: "Poppins";
+  background: #f5f5f5;
+}
+.profile-image {
+  height: 200px;
+  border-radius: 50%;
+}
+.headerGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 40px;
+}
+header {
+  align-items: center;
+  border-bottom: 1px solid #333;
+  background: #fff;
+  padding: 10px 40px;
+}
+header h1 {
+  grid-column: span 6;
+  font-size: 3em;
+  color: #232330;
+}
+header nav {
+  grid-column: 7 / span 6;
+  justify-self: flex-end;
+}
+header nav a {
+  color: #333;
+  margin-left: 10px;
+  text-decoration: none;
+}
+header nav a:hover {
+  color: var(--nav-link-color);
+}
+
+.card1 {
+  background: #fff;
+  grid-column: 2 / span 5;
+  border: 2px solid #333;
+  border-radius: 9px;
+  align-items: center;
+  text-align: center;
+}
+.card1 img {
+  border-radius: 8px 8px 0px 0px;
+}
+.card1:hover {
+  box-shadow: 2px 2px 2px var(--card-shadow-color);
+}
+
+.card-content {
+  padding: 10px 20px;
+}
+
+.card2 {
+  background: #fff;
+  grid-column: 7 / span 5;
+  border: 2px solid #333;
+  align-items: center;
+  text-align: center;
+  border-radius: 8px;
+}
+.card2:hover {
+  border: 4x solid #333;
+  box-shadow: 2px 2px 2px var(--card-shadow-color);
+}
+@media screen and (max-width: 980px) {
+  main img {
+    grid-column: 2 / span 10;
+  }
+  main .welcome {
+    grid-column: 2 / span 10;
+  }
+  .card {
+    grid-column: 3 / span 8;
+  }
+  .profile {
+    grid-column: 6 / span 5;
+  }
+  .profile-image {
+    height: 100px;
+    border-radius: 50%;
+  }
+}
+/* .grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 30px;
+}
+header {
+  background: #fff;
+  padding: 20px 40px;
+  align-items: center;
+}
+
+header h1 {
+  color: #232330;
+  font-size: 3em;
+  grid-column: span 6;
+}
+header nav {
+  justify-self: end;
+  grid-column: 7 / span 6;
+}
+header nav a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 10px;
+} */
+/* 
+main {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+main img {
+  grid-column: span 6;
+  width: 100%;
+  border-radius: 6px;
+}
+main .welcome {
+  grid-column: 8 / span 5;
+}
+main h2 {
+  grid-column: span 12;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 20px;
+}
+
+main .card {
+  grid-column: span 4;
+  border-radius: 6px;
+  background: #fff;
+  padding: 10px 20px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 980px) {
+  main img {
+    grid-column: 2 / span 10;
+  }
+  main.grid .welcome {
+    grid-row: 2;
+    grid-column: 3 / span 8;
+    text-align: center;
+  }
+  main .card {
+    grid-column: 3 / span 8;
+  }
+} */

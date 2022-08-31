@@ -1,0 +1,34 @@
+.header {
+  grid-column: 1 / span 6;
+  font-size: 34px;
+  display: flex;
+}
+.header a {
+  color: #333;
+  margin-left: 20px;
+  text-decoration: none;
+}
+.header a:hover {
+  color: var(--nav-link-color);
+  transition: color 0.2s ease-in;
+}
+.nav {
+  grid-column: 7 / span 6;
+  justify-self: flex-end;
+}
+.nav ul {
+  display: flex;
+  flex: 1;
+  list-style: none;
+  justify-content: space-around;
+}
+.nav a {
+  color: #333;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.nav a:hover {
+  color: var(--nav-link-color);
+  transition: color 0.2s ease-in;
+}

@@ -1,9 +1,12 @@
+import NavBar from "features/navbar"
+import Footer from "features/footer"
+
 export default function Layout({ children }) {
   return (
-    <div>
-      <header>Head root</header>
+    <>
+      <NavBar />
       {children}
-      <footer>Footer</footer>
-    </div>
+      <Footer />
+    </>
   )
 }

@@ -1,16 +1,36 @@
-import Page from '@/ui/page'
-import Gist from 'react-gist'
+import Page from "@/ui/page"
 
-export default function LandingPage() {
+import { getFeaturedPosts } from "lib/post-utils"
+
+// import featuredPosts from "@/data/blogs"
+import FeaturedPosts from "@/features/posts/featured-posts"
+
+import Main from "features/main"
+import Welcome from "features/welcome"
+
+export default function LandingPage({ posts }) {
   return (
     <div>
       <Page
-        title='Welcome to my Blog'
+        title="Welcome to my Blog"
         description="Richard Soriano's blog about Front End Programming in ReactJS Redux NextJS"
       >
-        <h1> Hello World </h1>
-        <Gist id='394470107aab1bfeb77059349ee06d81' />
+        <Main>
+          <Welcome />
+
+          <FeaturedPosts posts={posts} />
+        </Main>
       </Page>
     </div>
   )
+}
+
+export function getStaticProps() {
+  const featuredPosts = getFeaturedPosts()
+
+  return {
+    props: {
+      posts: featuredPosts,
+    },
+  }
 }
