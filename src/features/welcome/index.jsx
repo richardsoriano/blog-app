@@ -1,5 +1,5 @@
 import Image from "next/image"
-
+import Link from "next/link"
 import styles from "./welcome.module.css"
 
 export default function Welcome() {
@@ -14,11 +14,17 @@ export default function Welcome() {
         />
       </div>
       <div className={styles.msg}>
-        <h2>Welcome</h2>
+        <h2>Hi, I'm Richard.</h2>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus
-          vel minima molestiae deserunt sed alias perferendis labore architecto
-          eaque, doloribus magni repellat. Placeat, temporibus obcaecati?
+          Modern web development and blockchain technologies are my passion. I
+          strive in making web development easier to understand.
+        </p>
+
+        <p>
+          On the side, I co-host the{" "}
+          <Link href="https://www.meetup.com/learnteachcode/">
+            Koreatown Coders group for Learn Teach Code.
+          </Link>
         </p>
       </div>
     </div>
