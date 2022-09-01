@@ -34,14 +34,14 @@ export function getStaticProps() {
     return {
       props: {
         posts: [],
-        projects: null,
+        projects: [],
       },
     }
   }
   return {
     props: {
       posts: featuredPosts,
-      projects: null,
+      projects: allProjects,
     },
   }
 }
