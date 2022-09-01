@@ -29,7 +29,10 @@ export default function Post({ post, i }) {
                 {formattedDate}
                 <i className="fa fa-book-open"></i> {readTime}
               </h3>
-              <p>{content.slice(0, 100)}</p>
+              <p>
+                {content.slice(0, 200)}
+                {content.length > 200 ? "..." : ""}
+              </p>
             </a>
           </Link>
         </div>
@@ -48,7 +51,9 @@ export default function Post({ post, i }) {
                 {formattedDate}
                 <i className="fa fa-book-open"></i> <span>{readTime}</span>
               </h3>
-              <p>{content.slice(0, 50)}</p>
+              <p>
+                {content.slice(0, 200)} {content.length > 200 ? "..." : ""}
+              </p>
             </a>
           </Link>
         </div>

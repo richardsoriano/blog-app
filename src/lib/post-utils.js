@@ -8,9 +8,7 @@ export function getPostsFiles() {
   return fs.readdirSync(postsDirectory)
 }
 export function getPostData(postIdentifier) {
-  // console.log("postidentify", postIdentifier)
   const postSlug = postIdentifier.replace(/\.md$/, "") // removes the file extension
-  // console.log("postSlug", postSlug)
   const filePath = path.join(postsDirectory, `${postSlug}.md`)
   const fileContent = fs.readFileSync(filePath, "utf-8")
   const { data, content } = matter(fileContent)
