@@ -33,6 +33,7 @@ export function getStaticProps() {
   return {
     props: {
       posts: featuredPosts,
+      projects: allProjects,
     },
   }
 }
