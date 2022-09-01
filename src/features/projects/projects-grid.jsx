@@ -4,7 +4,7 @@ import { Fragment } from "react"
 export default function ProjectsGrid({ projects = [] }) {
   return (
     <Fragment>
-      {projects.length > 0
+      {projects
         ? projects.map((project, i) => (
             <Project project={project} i={i} key={project.title} />
           ))

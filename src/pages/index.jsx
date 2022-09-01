@@ -20,7 +20,7 @@ export default function LandingPage({ posts }) {
           <Welcome />
 
           <FeaturedPosts posts={posts} />
-          <AllProjects projects={projectsLists} />
+          <AllProjects projects={null} />
         </Main>
       </Page>
     </div>
@@ -30,10 +30,18 @@ export default function LandingPage({ posts }) {
 export function getStaticProps() {
   const featuredPosts = getFeaturedPosts()
   const allProjects = projectsLists
+  if (!allProjects || !featuredPosts) {
+    return {
+      props: {
+        posts: [],
+        projects: null,
+      },
+    }
+  }
   return {
     props: {
       posts: featuredPosts,
-      projects: allProjects,
+      projects: null,
     },
   }
 }
