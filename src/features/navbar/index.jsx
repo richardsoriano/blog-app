@@ -16,7 +16,7 @@ export default function NavBar({}) {
             <a>Home</a>
           </Link>
 
-          <Link href="/projects">
+          <Link href="#projects">
             <a>Projects </a>
           </Link>
           <Link href="/posts">
@@ -83,21 +83,3 @@ export default function NavBar({}) {
     </header>
   )
 }
-
-;<header>
-  <Link href="/">
-    <a>
-      <h1 className="styles.bigblue">big blue logo</h1>
-    </a>
-  </Link>
-  <nav className="styles.nav">
-    <ul>
-      <li>
-        <Link href="Videos">Videos</Link>
-      </li>
-      <li>
-        <Link href="Blog">Blogs</Link>
-      </li>
-    </ul>
-  </nav>
-</header>
