@@ -16,7 +16,7 @@ export default function NavBar({}) {
             <a>Home</a>
           </Link>
 
-          <Link href="#projects">
+          <Link href="/#projects">
             <a>Projects </a>
           </Link>
           <Link href="/posts">
