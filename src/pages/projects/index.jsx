@@ -1,7 +1,6 @@
 import Head from "next/head"
-// import { getAllPosts } from "lib/post-utils"
 import AllProjects from "@/features/projects/"
-// import projectsList from "@/data/projects"
+import projectsList from "@/data/projects"
 
 export default function AllProjectsPage({ projects }) {
   return (

@@ -9,7 +9,7 @@ import projectsLists from "@/data/projects"
 import Main from "features/main"
 import Welcome from "features/welcome"
 
-export default function LandingPage({ posts }) {
+export default function LandingPage({ posts, projects }) {
   return (
     <div>
       <Page
@@ -18,9 +18,8 @@ export default function LandingPage({ posts }) {
       >
         <Main>
           <Welcome />
-
           <FeaturedPosts posts={posts} />
-          <AllProjects projects={null} />
+          <AllProjects projects={projects} />
         </Main>
       </Page>
     </div>
@@ -30,7 +29,8 @@ export default function LandingPage({ posts }) {
 export function getStaticProps() {
   const featuredPosts = getFeaturedPosts()
   const allProjects = projectsLists
-  if (!allProjects || !featuredPosts) {
+
+  if (!allProjects) {
     return {
       props: {
         posts: [],
