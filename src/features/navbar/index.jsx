@@ -44,27 +44,3 @@ export default function NavBar({}) {
     </header>
   )
 }
-
-// return (
-//   <nav className="NavbarItems">
-//     <h1 className="navbar-logo">
-//       {/* <Link href="/"> */}
-//       Richard Soriano
-//       {/* </Link> */}
-//     </h1>
-//     {/* <div className="menu-icon" onClick={() => setActive((prev) => !prev)}>
-//       <i className={active ? "fas fa-times" : "fas fa-bars"}></i>
-//     </div> */}
-//     <ul>
-//       {menuItems.map((menuItem, index) => {
-//         return (
-//           <li key={index}>
-//             <Link href={menuItem.url}>
-//               <a>{menuItem.name}</a>
-//             </Link>
-//           </li>
-//         )
-//       })}
-//     </ul>
-//   </nav>
-// )
