@@ -21,7 +21,7 @@ export default function Welcome() {
         </p>
 
         <p>
-          Every week, I co-host the{" "}
+          Every week, I co-facilitate the{" "}
           <Link href="https://www.meetup.com/learnteachcode/">
             Koreatown Coders group for Learn Teach Code.
           </Link>
