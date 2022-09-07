@@ -91,11 +91,13 @@
     grid-column: 4 / span 6;
     font-size: 24px;
     display: flex;
-    justify-self: center;
+    /* justify-self: center; */
+    text-align: center;
   }
   .nav {
     grid-column: 4 / span 6;
-    justify-self: center;
+    /* justify-self: center; */
+    text-align: center;
   }
   /* .nav ul {
     display: flex;

@@ -14,7 +14,7 @@ export default function Welcome() {
         />
       </div>
       <div className={styles.msg}>
-        <h2>Hi, I'm Richard.</h2>
+        <h2>Hi, I'm Richard</h2>
         <p>
           Modern web development and blockchain technologies are my passion. I
           strive to make web development easier to understand.
