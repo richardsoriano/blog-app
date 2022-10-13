@@ -70,7 +70,21 @@ export default function Content({ post }) {
   }
   return (
     <div className={styles.content}>
+      {" "}
       <article className={styles.article}>
+        <Image src={imagePath} width={500} height={300} layout="responsive" />
+        <h2>{post.title}</h2>
+        <h3>
+          {post.datePublished} <i className="fa fa-book-open"></i>
+          <span>{post.readTime}</span>
+        </h3>
+        <p>
+          <ReactMarkdown components={customRenderers}>
+            {post.content}
+          </ReactMarkdown>
+        </p>
+        {/* </article> */}
+        {/* <article className={styles.article}>
         <Image src={imagePath} width={500} height={300} layout="responsive" />{" "}
         <h2>{post.title}</h2>
         <h3>
@@ -82,6 +96,7 @@ export default function Content({ post }) {
             {post.content}
           </ReactMarkdown>
         </p>
+      */}
       </article>
     </div>
   )

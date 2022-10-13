@@ -12,6 +12,7 @@ export default function Post({ post, i }) {
   })
   const imagePath = `/images/posts/${slug}/${image}`
   const linkPath = `/posts/${slug}`
+
   return (
     <Fragment>
       {i % 2 === 0 ? (

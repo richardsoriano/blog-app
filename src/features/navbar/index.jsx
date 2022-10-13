@@ -4,13 +4,12 @@ import { menuItems, menuSocialItems } from "./menuItems"
 
 export default function NavBar({}) {
   return (
-    <header styles={styles.header}>
+    <div className={styles.header}>
       <h1 className={styles.title}>
         <Link href="/">
           <a>Richard Soriano</a>
         </Link>
       </h1>
-
       <nav className={styles.nav}>
         <ul>
           {menuItems.map((menuItem, index) => {
@@ -23,6 +22,7 @@ export default function NavBar({}) {
             )
           })}
         </ul>
+
         <ul>
           {menuSocialItems.map((menuSocialItem, index) => {
             return (
@@ -41,6 +41,6 @@ export default function NavBar({}) {
           })}
         </ul>
       </nav>
-    </header>
+    </div>
   )
 }

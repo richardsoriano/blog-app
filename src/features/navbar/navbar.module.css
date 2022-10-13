@@ -1,11 +1,22 @@
+.header {
+  align-items: center;
+  text-align: center;
+  border-bottom: 2px solid #333;
+  background: #fff;
+  display: grid;
+  grid: repeat(12, 1fr);
+  grid-gap: 5px;
+  padding: 10px 20px;
+}
+
 .title {
-  grid-column: 1 / span 6;
-  font-size: 34px;
+  grid-column: 1 / span 5;
+  font-size: 24px;
   display: flex;
 }
+
 .title a {
   color: #333;
-
   text-decoration: none;
 }
 .title a:hover {
@@ -13,14 +24,16 @@
   transition: color 0.2s ease-in;
 }
 .nav {
-  grid-column: 7 / span 6;
+  grid-column: 6 / span 5;
   justify-self: flex-end;
+  font-size: 16px;
 }
 .nav ul {
   display: flex;
   flex: 1;
   list-style: none;
   justify-content: space-around;
+  padding: 0px;
 }
 .nav li {
   justify-items: center;
@@ -29,7 +42,6 @@
   color: #333;
   margin-left: 20px;
   text-decoration: none;
-  font-size: 20px;
 }
 .nav a:hover {
   color: var(--nav-link-color);
@@ -41,14 +53,27 @@
 }
 
 @media screen and (max-width: 768px) {
+  .header {
+    padding: 5px 0px;
+  }
   .title {
-    grid-column: 4 / span 6;
-    font-size: 24px;
+    grid-column: 1 / span 5;
+    font-size: 20px;
     display: flex;
     justify-self: center;
+    text-align: center;
   }
   .nav {
-    grid-column: 4 / span 6;
+    grid-column: 1 / span 5;
     justify-self: center;
+    text-align: center;
+    font-size: 14px;
+  }
+  .nav ul {
+    display: flex;
+    flex: 1;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0px 0px;
   }
 }

@@ -19,7 +19,8 @@ export default function Project({ project, i }) {
                 height={300}
                 layout="responsive"
               />
-              <h2>{title}</h2> <p>{content}</p>
+              <h2>{title}</h2>
+              <p>{content}</p>
             </a>
           </Link>
         </div>
@@ -33,7 +34,8 @@ export default function Project({ project, i }) {
                 height={300}
                 layout="responsive"
               />
-              <h2>{title}</h2> <p>{content}</p>
+              <h2>{title}</h2>
+              <p>{content}</p>
             </a>
           </Link>
         </div>

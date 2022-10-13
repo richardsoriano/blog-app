@@ -1,11 +1,11 @@
-import PostsGrid from "./grid"
+import PostsGrid from "@/features/posts/grid"
 import styles from "./featured-posts.module.css"
 
-export default function AllPosts({ posts }) {
+export default function FeaturedPosts({ posts }) {
   return (
     <section>
       <div className={styles.blogs}>
-        <h2>Blogs</h2>
+        <h2>Featured Blog Posts</h2>
         <PostsGrid posts={posts} />
       </div>
     </section>
