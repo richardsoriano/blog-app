@@ -1,7 +1,7 @@
 ---
 title: Functional Programming Principles
 excerpt: As a Javascript developer, functional programming has increased my productivity
-image: alexander-grey-KFqosh9fuDo-unsplash.jpeg
+image: mimi-thian-BYGLQ32Wjx8-unsplash.jpg
 isFeatured: true
 datePublished: "2022-04-01"
 readTime: "2 mns"
