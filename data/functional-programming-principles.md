@@ -26,8 +26,6 @@ Break code up into small stateless functions. That way there is consistency in w
 
 Functional programming has elevated my programming skills. I now create small reusable code snippets. This may appear to be a slow process in the early stages. Overall, this has increased my efficiency and decreased debugging time. I am very fortunate to have studied under senior programmers who are always leveling up. It’s a win/win for all the developers on the team. Functional programming is an approach that I encourage other javascript engineers when it makes sense.
 
-are the most common ones.
-
 **Customizable components** allow flexibility for the needs of the application. It also avoids having to import unnecessary members and functions that usually come from 3rd party. This will streamline the software. Since developers wrote the code, it’s best to write your own. It also makes it easier to debug.
 
 **by Richard Soriano**

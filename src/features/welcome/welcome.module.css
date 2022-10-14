@@ -22,6 +22,14 @@
   font-size: 16px;
   font-weight: normal;
 }
+.welcome a {
+  color: #333;
+  text-decoration: none;
+}
+.welcome a:hover {
+  color: rgba(127, 4, 209, 0.974);
+  transition: box-shadow 0.3s ease-in;
+}
 @media screen and (max-width: 768px) {
   .welcome {
     display: flex;

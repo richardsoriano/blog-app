@@ -39,16 +39,21 @@ export default function Content({ post }) {
 
       if (node.children[0].tagName === "img") {
         const image = node.children[0]
-
+        console.log("image", image.properties.src)
+        console.log("image.alt", image.alt)
+        let imagePath = `/images/posts/${post.slug}/${image.properties.src}`
+        console.log(imagePath)
         return (
           <div className={styles.img}>
-            <Image
-              src={`/images/posts/${post.slug}/${image.properties.src}`}
+            <img src={imagePath} alt="Computer" />
+
+            {/* <Image
+              src={imagePath}
               alt={image.alt}
               height={600}
               width={800}
               layout="responsive"
-            />
+            /> */}
           </div>
         )
       }
@@ -72,7 +77,8 @@ export default function Content({ post }) {
     <div className={styles.content}>
       {" "}
       <article className={styles.article}>
-        <Image src={imagePath} width={500} height={300} layout="responsive" />
+        <img src={imagePath} alt="Computer" className={styles.img} />
+        {/* <Image src={imagePath} width={500} height={300} layout="responsive" /> */}
         <h2>{post.title}</h2>
         <h3>
           {post.datePublished} <i className="fa fa-book-open"></i>

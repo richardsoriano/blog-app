@@ -1,7 +1,7 @@
 .blogs {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 15px;
+  gap: 5px;
 }
 .blogs h2 {
   grid-column: span 12;
@@ -37,6 +37,7 @@
   border-radius: 9px;
   text-align: center;
   max-width: 100%;
+  margin: 5px;
 }
 .card1 img {
   border-radius: 8px 8px 0px 0px;
@@ -68,6 +69,7 @@
   text-align: center;
   border-radius: 8px;
   max-width: 100%;
+  margin: 5px;
 }
 .card2 img {
   border-radius: 8px 8px 0px 0px;
@@ -90,7 +92,7 @@
     font-size: 12px;
     font-weight: normal;
     text-align: left;
-    padding: 10px;
+    padding: 5px;
   }
   .blogs h2 {
     font-size: 16px;

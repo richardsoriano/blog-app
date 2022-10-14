@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { useState } from "react"
 import styles from "./welcome.module.css"
 
 export default function Welcome() {
@@ -20,14 +21,14 @@ export default function Welcome() {
           Shuttle Endeavour’s mission while at UCLA. As a high-end developer, I
           love working in a friendly team environment and making the customers
           happy. With several years of software development, my strong suit is
-          integrating new technology to existing web applications while
-          respecting the existing legacy code.
+          modernizing web applications and creating scalable, reusable
+          components.
         </p>
 
         <p>
-          Every week, I co-facilitate the
+          Every week, I co-facilitate the{" "}
           <Link href="https://www.meetup.com/learnteachcode/">
-            Koreatown Coders group for Learn Teach Code.
+            <a>Koreatown Coders group for Learn Teach Code.</a>
           </Link>
         </p>
       </div>

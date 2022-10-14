@@ -78,6 +78,6 @@ export default function  TextField () {
 
 Credit to [Devmentor.live](https://youtu.be/kuzhS_Aepdc) for a terrific youtube example, A ReactJS Text Field with Validations using Hooks, of creating your own form fields that are reusable components with validations.
 
-![Devmentor live](sddefault.jpg)
+![Devmentor live](sddefault.jpeg)
 
 **by Richard Soriano**
