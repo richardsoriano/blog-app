@@ -17,8 +17,8 @@ export default function LandingPage({ posts, projects }) {
         description="Richard Soriano's blog about Javascript Programming in ReactJS Redux NextJS and using CSS"
       >
         <Main>
-          {/* <Welcome /> */}
-          {/* <FeaturedPosts posts={posts} /> */}
+          <Welcome />
+          <FeaturedPosts posts={posts} />
           <AllProjects projects={projects} />
         </Main>
       </Page>

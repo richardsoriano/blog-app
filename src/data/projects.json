@@ -1,21 +1,21 @@
 [
   {
     "title": "Book Beats",
-    "image": "book-beats.png",
+    "image": "book-beats.jpeg",
     "slug": "book-beats",
     "url": "https://book-beats.vercel.app/",
     "content": "Book Beats is created to assist the volunteers of the High Plains Book Awards for their annual book contest The admin and wrangler will be able to assign books, bags.  Readers will be assigned 4 books of bags for the category they choose. Then they can rate them online. Judges will rate and choose the top 3 winners for each category"
   },
   {
     "title": "Missing Persons",
-    "image": "missing-persons.png",
+    "image": "missing-persons.jpeg",
     "slug": "missing-persons",
     "url": "https://www.youtube.com/channel/UC0eMAHlouLpVDx1Lixql34Q",
     "content": "GraphQL NodeJS Project with static data. Youtube videos that walk through the code and demos the project"
   },
   {
     "title": "Salon Screenplay",
-    "image": "salon-screenplay.png",
+    "image": "salon-screenplay.jpeg",
     "slug": "salon-screenplay",
     "url": "https://comments-for-movies.netlify.app/#/",
     "content": "React Redux Firebase project"

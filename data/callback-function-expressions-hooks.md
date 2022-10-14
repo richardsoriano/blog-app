@@ -1,7 +1,7 @@
 ---
 title: Callback function expressions passed as parameters using hooks
 excerpt: The more parent-child components we build, the more complex parameters become. One of these parameters is the callback functions that use the hook, useState that sets values within an object.
-image: 5k892hu2zbmlleivhuvx.webp
+image: parent-child-diagram.jpeg
 isFeatured: false
 datePublished: "2022-04-01"
 readTime: "3 mns"

@@ -1,7 +1,7 @@
 ---
 title: A GraphQL introduction in Four Easy Steps
 excerpt: As a Javascript developer, functional programming has increased my productivity
-image: mimi-thian-vdXMSiX-n6M-unsplash.jpg
+image: mimi-thian-vdXMSiX-n6M-unsplash.jpeg
 isFeatured: false
 datePublished: "2022-04-01"
 readTime: "7 mns"

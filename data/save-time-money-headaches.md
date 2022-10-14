@@ -1,7 +1,7 @@
 ---
 title: Save time, money and headaches using Higher Order Components
 excerpt: JavaScript is the most important programming language for web development. Reusability and stability are key in large projects.
-image: sebastian-herrmann-oMpknr7yi7g-unsplash.jpg
+image: sebastian-herrmann-oMpknr7yi7g-unsplash.jpeg
 isFeatured: true
 datePublished: "2022-01-30"
 readTime: "2 mns"
@@ -25,4 +25,4 @@ are the most common ones.
 
 **by Richard Soriano**
 
-![Saved money time and freed up computer programmers using Higher Order Components](mi-pham-FtZL0r4DZYk-unsplash.jpg)
+![Saved money time and freed up computer programmers using Higher Order Components](mi-pham-FtZL0r4DZYk-unsplash.jpeg)

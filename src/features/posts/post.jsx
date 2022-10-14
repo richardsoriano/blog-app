@@ -19,12 +19,8 @@ export default function Post({ post, i }) {
         <div className={styles.card1}>
           <Link href={linkPath}>
             <a className={styles.a}>
-              <Image
-                src={imagePath}
-                width={500}
-                height={300}
-                layout="responsive"
-              />
+              <img src={imagePath} alt="Computer" className={styles.img} />
+
               <h2>{title}</h2>
               <h3>
                 {formattedDate}
@@ -41,12 +37,7 @@ export default function Post({ post, i }) {
         <div className={styles.card2}>
           <Link href={linkPath}>
             <a>
-              <Image
-                src={imagePath}
-                width={500}
-                height={300}
-                layout="responsive"
-              />
+              <img src={imagePath} alt="Computer" className={styles.img} />
               <h2>{title}</h2>
               <h3>
                 {formattedDate}

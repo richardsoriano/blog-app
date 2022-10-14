@@ -10,7 +10,7 @@
 }
 
 .title {
-  grid-column: 1 / span 5;
+  grid-column: 3 / span 2;
   font-size: 24px;
   display: flex;
 }
@@ -24,8 +24,8 @@
   transition: color 0.2s ease-in;
 }
 .nav {
-  grid-column: 6 / span 5;
-  justify-self: flex-end;
+  grid-column: 5 / span 4;
+  justify-self: center;
   font-size: 16px;
 }
 .nav ul {
