@@ -10,4 +10,10 @@
   justify-self: center;
   text-align: center;
   padding: 10px;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .footer {
+    font-size: 12px;
+  }
 }
