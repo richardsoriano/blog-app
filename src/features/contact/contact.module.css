@@ -1,72 +1,95 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  /* width: 90%; */
-  /* max-width: 50rem; */
-  gap: 40px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  grid-template-columns: repeat(8, 1fr);
 }
-.contact {
+.control {
+  background: #fff;
   grid-column: 2 / span 10;
-  border: 1px solid #333;
-  border-radius: 8px;
-  margin: 20px auto;
-  font-size: 20px;
-  width: 90%;
-  max-width: 50rem;
+  border: 2px solid #333;
+  margin: 20px;
   padding: 20px;
-  /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); */
-  box-shadow: 2px 2px 2px rgba(82, 24, 250, 0.5);
-}
-.contact h1 {
-  margin: 10px 40px;
-  text-align: left;
-  font-size: 20px;
-}
-.contact input,
-.contact textarea {
-  font-size: 16px;
-  padding: 1rem;
-  font: inherit;
-  width: 100%;
-  border: 1px solid rgb(109, 109, 109);
-  border-radius: 4px;
-
-  resize: none;
-}
-.contact .controls {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 1 rem;
+  flex-direction: column;
+  border: 1px solid #333;
+  box-shadow: 2px 2px 2px rgba(82, 24, 250, 0.5);
+  border-radius: 9px;
+  text-align: left;
 }
-.contact .control {
-  flex: 1;
-  min-width: 10rem;
-  padding: 0px 20px;
+
+.control .formGroup {
+  margin-bottom: 1em;
+  padding: 10px;
 }
-.contact label {
-  display: block;
+
+.formGroup label {
   margin: 10px 0 5px 0;
   font-weight: bold;
   font-family: "Oswald", sans-serif;
+  font-size: 16px;
 }
-.contact .action {
+
+.formGroup ul {
+  list-style: none;
+  margin: 0 0 2em;
+  padding: 0;
+}
+.formFields li {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.formFields label {
+  flex: 1 0 90px;
+  max-width: 100px;
+}
+
+.formFields input[type="text"]:focus,
+.formFields input[type="email"]:focus,
+.formFields textarea:focus {
+  border: 1px solid rgba(82, 24, 250, 0.5);
+  outline: none;
+}
+
+.formFields input[type="text"],
+.formFields input[type="email"],
+.formFields textarea {
+  flex: 1 0 200px;
+  font-size: 16px;
+
+  font: inherit;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.control .actions {
   margin-top: 20px;
   text-align: right;
 }
-.contact button {
+.control button {
   font: inherit;
   cursor: pointer;
   border: 1px solid black;
   border-radius: 4px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 4px rgba(82, 24, 250, 0.5);
 }
+
 .contact button:hover {
   background-color: #a07aaa;
 }
 @media (max-width: 768px) {
-  .contact h1 {
-    font-size: 16px;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 100%;
+    margin: 5px;
+  }
+  .control {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  .control .actions {
+    margin: 5px 0px 5px;
     text-align: center;
   }
 }
