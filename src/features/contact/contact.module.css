@@ -53,7 +53,7 @@
 .formFields input[type="text"],
 .formFields input[type="email"],
 .formFields textarea {
-  flex: 1 0 200px;
+  flex: 1 0 125px;
   font-size: 16px;
 
   font: inherit;
