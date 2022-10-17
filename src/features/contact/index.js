@@ -93,6 +93,7 @@ function ContactForm() {
         <div className={styles.control}>
           <form className={styles.form} onSubmit={sendMessageHandler}>
             <section className={styles.formGroup}>
+              <h3>How can I help you?</h3>
               <ul className={styles.formFields}>
                 <li>
                   <label htmlFor="name">Name:</label>

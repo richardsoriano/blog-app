@@ -53,7 +53,7 @@
 .formFields input[type="text"],
 .formFields input[type="email"],
 .formFields textarea {
-  flex: 1 0 125px;
+  flex: 1 0 200px;
   font-size: 16px;
 
   font: inherit;
@@ -91,5 +91,18 @@
   .control .actions {
     margin: 5px 0px 5px;
     text-align: center;
+  }
+
+  .formGroup label {
+    margin: 5px 0 5px 0;
+
+    font-size: 14px;
+  }
+
+  .formFields input[type="text"],
+  .formFields input[type="email"],
+  .formFields textarea {
+    font-size: 14px;
+    max-width: 225px;
   }
 }
