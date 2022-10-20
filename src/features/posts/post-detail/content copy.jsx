@@ -17,13 +17,23 @@ import materialOceanic from "react-syntax-highlighter/dist/cjs/styles/prism/mate
 import atomDark from "react-syntax-highlighter/dist/cjs/styles/prism/atom-dark"
 import js from "react-syntax-highlighter/dist/cjs/languages/prism/javascript"
 import css from "react-syntax-highlighter/dist/cjs/languages/prism/css"
-import Gist from "react-gist"
+
 SyntaxHighlighter.registerLanguage("js", js)
 SyntaxHighlighter.registerLanguage("css", css)
 
 export default function Content({ post }) {
   const imagePath = `/images/posts/${post.slug}/${post.image}`
   const customRenderers = {
+    // img(image) {
+    //   return (
+    //     <Image
+    //       src={`/images/posts/${post.slug}/${image.src}`}
+    //       alt={image.alt}
+    //       width={600}
+    //       height={300}
+    //     />
+    //   );
+    // },
     p(paragraph) {
       const { node } = paragraph
 
@@ -36,6 +46,14 @@ export default function Content({ post }) {
         return (
           <div className={styles.img}>
             <img src={imagePath} alt="Computer" />
+
+            {/* <Image
+              src={imagePath}
+              alt={image.alt}
+              height={600}
+              width={800}
+              layout="responsive"
+            /> */}
           </div>
         )
       }
@@ -45,22 +63,10 @@ export default function Content({ post }) {
 
     code(code) {
       const { className, children } = code
-      const language = className.split("-")[1] // className is language-js
-      let idString = ""
-
-      const inlineScript = /<script/.exec(children || "")
-      // if inline script e.g. <script src="https:\\gist.github.com\richardsoriano\12345abcd.js"
-      if (inlineScript) {
-        const scriptIdStart =
-          /<script src="https:\/\/gist.github.com\/(\w+)\//.exec(children)
-        const scriptIdEnd =
-          /<script src="https:\/\/gist.github.com\/(\w+)\/(\w+).js/.exec(
-            children
-          )
-        let idIndexStart = scriptIdStart[0].length
-        let idIndexEnd = scriptIdEnd[0].length - 3 // remove '.js'
-        idString = scriptTagMatchEnd[0].substring(idIndexStart, idIndexEnd)
-        return <Gist id={idString} />
+      const language = className.split("-")[1] // className is something like language-js => We need the "js" part here
+      console.log("node children ", children[0])
+      if (children[0].includes("Gist")) {
+        console.log("includes Gist")
       }
       return (
         <SyntaxHighlighter
