@@ -62,18 +62,20 @@ export default function Content({ post }) {
     },
 
     code(code) {
-      const { className, children } = code
+      const { className, children, inline } = code
       const language = className.split("-")[1] // className is something like language-js => We need the "js" part here
       console.log("node children ", children[0])
-      if (children[0].includes("Gist")) {
-        console.log("includes Gist")
-      }
-      return (
+
+      return !inline && language ? (
         <SyntaxHighlighter
           style={materialOceanic}
-          language={language}
+          language={language[1]}
           children={children}
         />
+      ) : (
+        <code className={className} {...props}>
+          {children}
+        </code>
       )
     },
   }
