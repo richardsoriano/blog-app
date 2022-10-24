@@ -1,7 +1,24 @@
-# this is my heading
+---
+title: Gist
+excerpt: Richard's Custom Gist
 
-lorem
+isFeatured: true
+datePublished: "2022-04-01"
+readTime: "3 mns"
+---
 
-!gist:sdfghjklkjfdfghjkljhgfd
+In this example we will use the hook, useState to set a form value and create a controlled component.
 
-<Gist id="sdfghjklkjfdfghjkljhgfd" />
+```js
+const [ name, setName ] = useState("")
+/* Parent */
+<TextField
+   onChange = {(val) => setName(val) }/* Child component */
+export default function  TextField () {
+   return (<input
+   type=”text”
+   name=”name”
+   onChange = { e => onChange( e.target.value) }
+```
+
+## Refactoring so the hook and child component are reusable

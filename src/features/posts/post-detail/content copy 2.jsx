@@ -1,3 +1,14 @@
+// const DUMMYPOST = {
+//   title: "title 100",
+//   image: "1.png",
+//   slug: "getting-started-with-nextjs",
+//   datePublished: "2022-02-10",
+//   excert:
+//     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae enim tempore ipsum magni, provident esse! Quibusdam similique maxime voluptate dolor! Reprehenderit adipisci sunt obcaecati. Odio ex, excepturi esse inventore velit similique molestias, amet repudiandae optio quam nulla provident nemo accusantium dolor quasi ab! Magni, pariatur fugiat sequi nam illo voluptatibus?",
+//   content: "# This is a first post",
+//   readTime: "5 mins",
+// }
+
 import ReactMarkdown from "react-markdown"
 import styles from "./content.module.css"
 import Image from "next/image"
@@ -7,7 +18,6 @@ import atomDark from "react-syntax-highlighter/dist/cjs/styles/prism/atom-dark"
 import js from "react-syntax-highlighter/dist/cjs/languages/prism/javascript"
 import css from "react-syntax-highlighter/dist/cjs/languages/prism/css"
 import Gist from "react-gist"
-
 SyntaxHighlighter.registerLanguage("js", js)
 SyntaxHighlighter.registerLanguage("css", css)
 
@@ -19,8 +29,10 @@ export default function Content({ post }) {
 
       if (node.children[0].tagName === "img") {
         const image = node.children[0]
-
+        console.log("image", image.properties.src)
+        console.log("image.alt", image.alt)
         let imagePath = `/images/posts/${post.slug}/${image.properties.src}`
+        console.log(imagePath)
         return (
           <div className={styles.img}>
             <img src={imagePath} alt="Computer" />
@@ -40,19 +52,19 @@ export default function Content({ post }) {
       const inlineScript = /<script/.exec(children || "")
 
       if (inlineScript) {
-        const strPatternStart = '<script src="https://gist.github.com/\\w+/'
+        // console.log("children", children)
+        const strPatternStart = '<script src="https://'
         const strPatternEnd =
           '<script src="https://gist.github.com/\\w+/\\w+.js'
         const regexpStart = new RegExp(strPatternStart)
         const scriptIdStart = regexpStart.exec(children)
 
         const regexpEnd = new RegExp(strPatternEnd)
-        const scriptIdEnd = regexpEnd.exec(children)
 
+        const scriptIdEnd = regexpEnd.exec(children)
         const idIndexStart = scriptIdStart[0].length
         const idIndexEnd = scriptIdEnd[0].length - 3 // remove '.js'
         idString = scriptIdEnd[0].substring(idIndexStart, idIndexEnd)
-
         return <Gist id={idString} />
       }
       return (
